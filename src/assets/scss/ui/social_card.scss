@@ -1,0 +1,40 @@
+.social_card {
+    width: 277px;
+    height: 250px;
+    border: 1px $stroke solid;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    transition: 500ms linear;
+    cursor: pointer;
+
+    .social_icon_name {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .socail_name {
+        color: $primary;
+        font-family: $inter;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 100%;
+    }
+
+    .social_info {
+        width: 200px;
+        color: $dark;
+        font-family: $inter;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 100%;
+    }
+
+    &:hover {
+        background: $white;
+        border: 1px $primary solid;
+    }
+}

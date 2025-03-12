@@ -1,0 +1,151 @@
+.delivery {
+    margin-top: 150px;
+
+    .delivery_main {
+        margin-top: 40px;
+        border-top: 1px $stroke solid;
+        border-bottom: 1px $stroke solid;
+    }
+
+    .delivery_wrapper {
+        border-right: 1px $stroke solid;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .delivey_description {
+        margin-top: 40px;
+        width: 616px;
+        color: $dark;
+        font-family: $inter;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 140%;
+
+        span {
+            color: $primary;
+        }
+    }
+
+    .delivery_btns {
+        margin-top: 60px;
+        display: flex;
+        gap: 40px;
+    }
+
+    .delivery_foto {
+        width: 447px;
+        height: 447px;
+        transform: rotate(9deg);
+    }
+}
+
+@media (max-width: 1240px) {
+    .delivery {
+
+        .delivey_description {
+            width: 400px;
+            font-size: 26px;
+        }
+
+        .delivery_foto {
+            width: 360px;
+            height: 360px;
+            transform: rotate(9deg);
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .delivery {
+
+        .delivery_foto {
+            width: 300px;
+            height: 300px;
+        }
+
+        .delivery_btns {
+            margin-top: 10px;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .delivery {
+        position: relative;
+
+        .title {
+            padding-left: 50px;
+        }
+
+        .delivery_wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+            border: 0px;
+        }
+
+        .delivery_wrapper {
+            padding: 0px 50px;
+        }
+
+        .delivey_description {
+            width: 100%;
+            font-size: 32px;
+        }
+
+        &::before {
+            content: "";
+            width: 100%;
+            height: 0px;
+            border-top: 1px $stroke solid;
+            position: absolute;
+            top: 430px;
+            left: 0px;
+        }
+
+        .delivery_foto {
+            width: 520px;
+            height: 500px;
+            transform: rotate(-9deg);
+            display: flex;
+            justify-content: center;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .delivery {
+        .title {
+            padding-left: 0px;
+        }
+
+        .delivery_wrapper {
+            padding: 0px;
+            gap: 40px;
+        }
+
+        .delivey_description {
+            font-size: 24px;
+        }
+
+        .delivery_btns {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            button {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .delivery_foto {
+            width: 320px;
+            height: 320px;
+            align-self: center;
+        }
+    }
+}

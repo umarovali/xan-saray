@@ -1,0 +1,26 @@
+:root {
+    --container: 1237px;
+}
+
+@media (max-width: 1240px) {
+    :root {
+        --container: 1100px;
+    }
+}
+
+@media (max-width: 950px) {
+    :root {
+        --container: 700px;
+    }
+}
+
+// Colors
+$primary: #A67C36;
+$dark: #0C0904;
+$stroke: #DDDCDA;
+$background: #FBF8F3;
+$white: #fff;
+// Fonts
+$inter: "Inter", sans-serif;
+// SizeContainer
+$container: var(--container);

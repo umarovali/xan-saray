@@ -1,0 +1,32 @@
+.button_primary, .button_white {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 500ms linear;
+    padding: 14px 20px;
+    border-radius: 50px;
+    font-family: $inter;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+}
+
+.button_primary {
+    color: $white;
+    background: $primary;
+    
+    &:hover {
+        background: $dark;
+    }
+}
+
+.button_white {
+    color: $primary;
+    background: transparent;
+    border: 1px $primary solid;
+    
+    &:hover {
+        background: $primary;
+        color: $white;
+    }
+}

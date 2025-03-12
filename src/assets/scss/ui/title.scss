@@ -1,0 +1,21 @@
+.title {
+    color: $dark;
+    font-family: $inter;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 100%;
+    display: flex;
+    align-items: end;
+    gap: 13px;
+
+    &_arrow {
+        color: $primary;
+        font-size: 37px;
+    }
+}
+
+@media (max-width: 620px) {
+    .title {
+        font-size: 32px;
+    }
+}
